@@ -1,0 +1,14 @@
+- model: courses.teacher
+  pk: 1
+  fields:
+    name: Vaclav
+- model: courses.teacher
+  pk: 2
+  fields:
+    name: Daniel
+- model: courses.course
+  pk: 1
+  fields:
+    title: Webove aplikace
+    start: 2022-02-10 11:11:45+00:00
+    cost: 564 EUR
