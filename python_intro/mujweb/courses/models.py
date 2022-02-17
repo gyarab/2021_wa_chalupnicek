@@ -1,3 +1,4 @@
+from statistics import mode
 from django.db import models
 
 class Teacher(models.Model):
@@ -9,3 +10,4 @@ class Teacher(models.Model):
 class Course(models.Model):
     title = models.CharField(max_length=255)
     start = models.DateTimeField()
+    cost = models.CharField(max_length=255) # 10 EUR,  250 KC 
