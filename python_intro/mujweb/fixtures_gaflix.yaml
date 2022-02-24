@@ -1,0 +1,56 @@
+- model: gaflix.movie
+  pk: 1
+  fields:
+    title: Django Unchained
+    description: ''
+    csfd_rating: null
+    director: null
+    actors: []
+    categories: []
+- model: gaflix.movie
+  pk: 2
+  fields:
+    title: Samotáři
+    description: ''
+    csfd_rating: null
+    director: null
+    actors: []
+    categories: []
+- model: gaflix.actor
+  pk: 1
+  fields:
+    name: Johny Depp
+    description: ''
+    birth_date: null
+- model: gaflix.actor
+  pk: 2
+  fields:
+    name: Brad Pitt
+    description: ''
+    birth_date: null
+- model: gaflix.actor
+  pk: 3
+  fields:
+    name: Angelina Jolie
+    description: ''
+    birth_date: null
+- model: gaflix.actor
+  pk: 4
+  fields:
+    name: Macháček
+    description: ''
+    birth_date: null
+- model: gaflix.director
+  pk: 1
+  fields:
+    name: Quentin Tarantino
+    description: ''
+    birth_date: null
+- model: gaflix.category
+  pk: 1
+  fields:
+    title: Action movies
+- model: gaflix.category
+  pk: 2
+  fields:
+    title: Horror movies
