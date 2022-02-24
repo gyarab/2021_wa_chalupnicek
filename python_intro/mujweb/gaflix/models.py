@@ -1,5 +1,3 @@
-from statistics import mode
-from tabnanny import verbose
 from django.db import models
 
 class Movie(models.Model):
@@ -10,7 +8,7 @@ class Movie(models.Model):
     actors = models.ManyToManyField('Actor', blank=True)
     categories = models.ManyToManyField('Category', blank=True)
 
-    def __str__(self) -> str:
+    def __str__(self):
         return self.title
 
 class Actor(models.Model):
@@ -18,7 +16,7 @@ class Actor(models.Model):
     description = models.TextField(null=True, blank=True) 
     birth_date = models.DateField(null=True, blank=True)
 
-    def __str__(self) -> str:
+    def __str__(self):
         return self.name
 
 
@@ -28,14 +26,14 @@ class Director(models.Model):
     description = models.TextField(null=True, blank=True)
     birth_date = models.DateField(null=True, blank=True)
 
-    def __str__(self) -> str:
+    def __str__(self):
         return self.name
 
 
 class Category(models.Model):
     title = models.CharField(max_length=255)
 
-    def __str__(self) -> str:
+    def __str__(self):
         return self.title
 
     class Meta:
