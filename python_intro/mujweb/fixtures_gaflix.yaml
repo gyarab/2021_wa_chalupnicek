@@ -36,6 +36,14 @@
     description: |
       William Bradley „Brad“ Pitt je americký filmový herec, držitel Zlatého glóbu za nejlepší mužský herecký výkon ve vedlejší roli, kterého obdržel za výkon ve filmu Dvanáct opic a držitelem Oscara za vedlejší roli za film Tenkrát v Hollywoodu. V letech 2000–2005 byl ženatý s herečkou Jennifer Anistonovou.
     birth_date: 1963-12-18
+- model: gaflix.actor
+  pk: 3
+  fields:
+    name: Macháček
+- model: gaflix.actor
+  pk: 4
+  fields:
+    name: Angelina Jolie
 
 
 

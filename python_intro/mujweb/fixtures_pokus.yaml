@@ -1,0 +1,9 @@
+- model: gaflix.movie
+  pk: 1
+  fields:
+    title: Samotáři
+    description: ''
+    csfd_rating: null
+    director: null
+    actors: []
+    categories: []

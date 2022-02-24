@@ -2,7 +2,7 @@
   pk: 1
   fields:
     password: pbkdf2_sha256$320000$mmcm0yKjxwDtGciZsHGkFV$B2Hj1J/oaQ9VCEKPwyLRoeRprSnSpl9LhatRiqhtPMw=
-    last_login: 2022-02-10 11:02:52.979748+00:00
+    last_login: 2022-02-24 10:26:24.481071+00:00
     is_superuser: true
     username: admin
     first_name: ''
