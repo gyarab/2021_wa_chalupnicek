@@ -23,6 +23,7 @@ def mojeview(request, course_id):
 
 from django.http import HttpResponse
 from django.shortcuts import render
+from gaflix.views import movielist
 
 def mujcontroller(request, id_predmetu):
     print("PREDMET:", id_predmetu)
@@ -33,7 +34,8 @@ def mujcontroller(request, id_predmetu):
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', TemplateView.as_view(template_name='one.html'), name='one'),
+    path('', movielist, name='homepage'),
+    path('jedna', TemplateView.as_view(template_name='one.html'), name='one'),
     path('dva', TemplateView.as_view(template_name='two.html'), name='two'),
     path('predmety/<int:id_predmetu>', mujcontroller, name='predmety'),
 ]

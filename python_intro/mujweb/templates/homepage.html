@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>GAFLIX movie list</title>
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h1>Choose your movie</h1>
+
+        {% for movie in movies %}
+        <h2>{{ movie.title }}</h2>
+        <p>{{ movie.description }}</p>
+        {% endfor %}
+    </div>    
+{% endblock %}
