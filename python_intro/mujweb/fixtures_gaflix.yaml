@@ -29,6 +29,7 @@
     description: |
       Johnny Depp, vlastním jménem John Christopher Depp II, je americký herec, známý zvláště pro své výkony ve filmech Střihoruký Edward, Ospalá díra, Piráti z Karibiku, Hledání Země Nezemě, Alenka v říši divů, Karlík a továrna na čokoládu nebo Fantastická zvířata. Má hvězdu na Hollywoodském chodníku slávy.
     birth_date: 1963-06-09
+    sex: male
 - model: gaflix.actor
   pk: 2
   fields:
@@ -36,14 +37,17 @@
     description: |
       William Bradley „Brad“ Pitt je americký filmový herec, držitel Zlatého glóbu za nejlepší mužský herecký výkon ve vedlejší roli, kterého obdržel za výkon ve filmu Dvanáct opic a držitelem Oscara za vedlejší roli za film Tenkrát v Hollywoodu. V letech 2000–2005 byl ženatý s herečkou Jennifer Anistonovou.
     birth_date: 1963-12-18
+    sex: male
 - model: gaflix.actor
   pk: 3
   fields:
     name: Macháček
+    sex: male
 - model: gaflix.actor
   pk: 4
   fields:
     name: Angelina Jolie
+    sex: female
 
 
 
@@ -59,7 +63,15 @@
     description: |
       Quentin Jerome Tarantino je americký filmový režisér, scenárista a herec, který začátkem devadesátých let proslul jako svěží, drsný i černohumorný vypravěč, který vnesl do tradičních amerických archetypů nový život. Svoji filmovou kariéru začínal jako uvaděč v kině. Nějaký čas byl i uvaděčem v pornokině.
     birth_date: 1963-03-27
+
+
+
 - model: gaflix.category
   pk: 1
   fields:
     title: Action movies
+
+- model: gaflix.category
+  pk: 2
+  fields:
+    title: Comedy
