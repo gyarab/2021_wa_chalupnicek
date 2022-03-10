@@ -15,6 +15,39 @@
     - 1
     categories:
     - 1
+    - 2
+    - 3
+                       
+- model: gaflix.movie
+  pk: 2
+  fields:
+    title: The Hateful Eight
+    description: |
+      Několik let po občanské válce se zasněženými kopci Wyomingu řítí dostavník. Veze se v něm John Ruth (Kurt Russell), lovec lidí, známý také jako „Kat", a Daisy Domergueová (Jennifer Jason Leigh). Jeho čeká odměna, vypsaná na její hlavu, ji soud a oprátka. Po cestě potkají dva muže – majora Marquise Warrena
+    csfd_rating: 88
+    director: 1
+    actors:
+    - 1
+    categories:
+    - 1
+    - 4
+    - 3
+    - 5
+            
+- model: gaflix.movie
+  pk: 3
+  fields:
+    title: Pulp Fiction
+    description: |
+      Scenárista, režisér a herec Quentin Tarantino (nar. 1963) je bezesporu jedním z nejvýznamnějších tvůrců současného světového filmu. Zaujal už svojí celovečerní prvotinou Gauneři (1991) a svým druhým filmem Pulp Fiction – historky z podsvětí (1994) jen potvrdil své dominantní postavení mezi postmoderními režiséry. Scénář filmu vznikl důmyslným propojením tří povídek spjatých se světem zločinu, jež jsou vyprávěny bez ohledu na časovou posloupnost a nakonec vytvoří uzavřený kruh. Původní název filmu, odkazující k pokleslé krvákové literatuře, dokonale souzní s tím, co se děje na plátně. Výbuchy brutálního násilí jsou odlehčeny velmi černým humorem a jedna bizarní situace za druhou ústí do ještě bizarnějších konců. Kromě novátorského scénáře a jisté režie film zaujme i přehlídkou mimořádných hereckých výkonů přesně obsazených představitelů, mj. Johna Travolty a Samuela L. Jacksona (zabijáci Vincent a Jules), Bruce Willise (unavený boxer Butch), Tima Rotha a Amandy Plummerové (milenecká dvojice, chystající se k přepadení) či Umy Thurmanové (gangsterská manželka Mia). Snímek byl uveden v soutěži MFF v Cannes 1994, odkud si odnesl nejvyšší ocenění, Zlatou palmu. Členové Americké akademie ho nominovali na Oscara v sedmi kategoriích (mj. i za nejlepší film a režii), ale zlatou sošku nakonec dostal pouze scénář filmu. V témže roce dominoval v rámci nezávislé tvorby a získal celkem čtyři Independent Spirit Awards (Ceny nezávislého ducha), a sice za nejlepší film, režii, scénář a herecký výkon v hlavní mužské roli (Samuel L. Jackson).
+    csfd_rating: 88
+    director: 1
+    actors:
+    - 1
+    categories:
+    - 6
+    - 5
+
 
 
 #   _  _            _ 
@@ -49,6 +82,32 @@
     name: Angelina Jolie
     sex: female
 
+- model: gaflix.actor
+  pk: 5
+  fields:
+    name: Samuel L. Jackson
+    description: |
+      Samuel L. Jackson se narodil ve Washingtonu, ale vyrůstal v jižanském prostředí státu Tennessee. Ještě než vůbec přičichl k herectví, živil se tento charakterní a uznávaný herec jako vrátný Manhattanského hotelu Plaza. Nicméně už tehdy měl za sebou studia herectví na Morehouse Colledge v Atlantě, takže se nemusel bát, že bude otvírat dveře svým bohatším spoluobčanům až do smrti. Jackson totiž účinkoval v hereckém spolku Negro Ensemble Company, kde hrál např. po…
+    birth_date: 1948-12-21
+    sex: male
+
+- model: gaflix.actor
+  pk: 6
+  fields:
+    name: Kurt Russell
+    description: |
+      Jako kluk hrál ve filmu s Elvisem Presleym a smlouvu na deset let mu podepsal legendární Walt Disney. Dnes je šestapadesátiletý Russell s osmi desítkami filmových rolí v životopise známý možná stejně jako oni.   Dlouhá léta Kurt Russell se svojí životní partnerkou Goldie Hawn strávil v oblasti coloradského Aspenu, kam společně unikli před světem Hollywoodu. Los Angeles totiž nebylo zrovna přívětivé k bojovníkovi za občanská práva a prominentnímu členovi United…
+    birth_date: 1951-03-17
+    sex: male
+
+- model: gaflix.actor
+  pk: 7
+  fields:
+    name: Uma Thurman
+    description: |
+      Uma se narodila 29.4.1970 v Bostonu. V 15 letech se rozhodla že bude herečkou. Přestěhovala se do New Yorku kde se živila jako modelka. Její první role byla ve filmu KISS DADDY GOODNIGHT. Ve stejném roce se ale objevila v trháku s hvězdným obsazením NEBEZPEČNÉ ZNÁMOSTI kde si mimo jiné zahrála po boku Johna Malkoviche nebo tehdy neznámého Keanu Reevse. Následovala role v Gilliamově DOBRODRUŽSTVÍ BARONA PRÁŠILA kde se objevila nahá. Při natáčení se to neobešlo bez…
+    birth_date: 1970-04-29
+    sex: male
 
 
 #   ___        _             _ 
@@ -69,9 +128,30 @@
 - model: gaflix.category
   pk: 1
   fields:
-    title: Action movies
+    title: Western
 
 - model: gaflix.category
   pk: 2
   fields:
-    title: Comedy
+    title: Dobrodružný
+
+- model: gaflix.category
+  pk: 3
+  fields:
+    title: Drama
+
+- model: gaflix.category
+  pk: 4
+  fields:
+    title: Thriller
+
+- model: gaflix.category
+  pk: 5
+  fields:
+    title: Mysteriózní
+
+- model: gaflix.category
+  pk: 6
+  fields:
+    title: Krimi
+
