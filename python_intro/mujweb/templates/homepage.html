@@ -6,11 +6,22 @@
 
 {% block content %}
     <div class="container">
+        <div>
+        {% for category in categories %}
+        <a href="{% url 'category_detail' category.pk %}" class="btn btn-primary">{{category.title}}</a>
+        {% endfor %}
+        </div>
+        
         <h1>Choose your movie</h1>
 
         {% for movie in movies %}
         <h2>{{ movie.title }}</h2>
         <p>{{ movie.description }}</p>
+        <ul>
+            {% for actor in movie.actors.all %}
+                <li>{{actor.name}} &ndash; {{actor.birth_date|date:"j. n. Y"}}</li>
+            {% endfor %}
+        </ul>
         {% endfor %}
     </div>    
 {% endblock %}
