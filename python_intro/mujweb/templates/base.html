@@ -23,7 +23,12 @@
                 <li class="nav-item">
                     <a class="nav-link{% if url == request.path %} active{% endif %}" href="{{ url }}">Home</a>
                 </li>
-                
+
+                {% url 'actorlist' as url %}
+                <li class="nav-item">
+                    <a class="nav-link{% if url == request.path %} active{% endif %}" href="{{ url }}">Herci</a>
+                </li>
+
                 {% url 'one' as url %}
                 <li class="nav-item">
                     <a class="nav-link{% if url == request.path %} active{% endif %}" href="{{ url }}">One</a>
