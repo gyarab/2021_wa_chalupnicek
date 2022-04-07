@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>GAFLIX actors list</title>
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h1>Herci</h1>
+
+        {% for actor in actors %}
+        <h2>
+            {% if actor.sex == SEX_MALE %}
+                👨
+            {% elif actor.sex == SEX_FEMALE %}
+                👸
+            {% else%}
+                ostatní
+            {% endif %}
+
+            {{ actor.name }} ({{actor.birth_date}})
+        </h2>
+        <p>{{ actor.description }}</p>
+        {% endfor %}
+    </div>    
+{% endblock %}
