@@ -47,7 +47,9 @@
     categories:
     - 6
     - 5
-
+    thumbnail: pulpfiction_poster.jpg
+    video_file: pulpfiction_video.mp4
+    
 
 
 #   _  _            _ 

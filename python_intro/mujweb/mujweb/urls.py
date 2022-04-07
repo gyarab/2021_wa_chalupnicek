@@ -23,7 +23,9 @@ def mojeview(request, course_id):
 
 from django.http import HttpResponse
 from django.shortcuts import render
-from gaflix.views import movielist, category_detail
+from gaflix.views import movielist, movie_detail, category_detail
+from django.conf.urls.static import static
+from django.conf import settings
 
 def mujcontroller(request, id_predmetu):
     print("PREDMET:", id_predmetu)
@@ -36,7 +38,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', movielist, name='homepage'),
     path('kategorie/<int:category_id>', category_detail, name='category_detail'),
+    path('filmy/<int:movie_id>', movie_detail, name='movie_detail'),
     path('jedna', TemplateView.as_view(template_name='one.html'), name='one'),
     path('dva', TemplateView.as_view(template_name='two.html'), name='two'),
     path('predmety/<int:id_predmetu>', mujcontroller, name='predmety'),
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
